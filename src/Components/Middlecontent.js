@@ -20,65 +20,65 @@ function Middlecontent() {
       </div>
       <br />
       <br />
-      <div className="Top-Div-container">
-        <Container>
-          <Row>
-            <Col sm={4}>
-              <Card style={{ width: "18rem" }}>
-                <h4 className="top-card-text">Filter</h4>
-                <p className="text-sub-div">Level</p>
-                <div className="select-cateogry">
-                  <FormGroup>
-                    <FormControlLabel
-                      control={<Checkbox />}
-                      label="Beginner"
-                      className="checkbox-text"
-                    />
-                    <FormControlLabel
-                      control={<Checkbox />}
-                      label="Intermediate"
-                      className="checkbox-text"
-                    />
-                    <FormControlLabel
-                      control={<Checkbox />}
-                      label="Advanced"
-                      className="checkbox-text"
-                    />
-                    <FormControlLabel
-                      control={<Checkbox defaultChecked />}
-                      label="All of the above"
-                      className="checkbox-text"
-                    />
-                  </FormGroup>
-                </div>
+      <Container>
+        <Row>
+          <Col sm={4}>
+            <Card>
+              <h4 className="top-card-text">Filter</h4>
+              <p className="text-sub-div">Level</p>
+              <div className="select-cateogry">
+                <FormGroup>
+                  <FormControlLabel
+                    control={<Checkbox />}
+                    label="Beginner"
+                    className="checkbox-text"
+                  />
+                  <FormControlLabel
+                    control={<Checkbox />}
+                    label="Intermediate"
+                    className="checkbox-text"
+                  />
+                  <FormControlLabel
+                    control={<Checkbox />}
+                    label="Advanced"
+                    className="checkbox-text"
+                  />
+                  <FormControlLabel
+                    control={<Checkbox defaultChecked />}
+                    label="All of the above"
+                    className="checkbox-text"
+                  />
+                </FormGroup>
+
                 <p className="text-sub-div">Price</p>
-                <div className="select-cateogry">
-                  <FormGroup>
-                    <FormControlLabel
-                      control={<Checkbox />}
-                      label="499-1000"
-                      className="checkbox-text"
-                    />
-                    <FormControlLabel
-                      control={<Checkbox />}
-                      label="1000-1500"
-                      className="checkbox-text"
-                    />
-                    <FormControlLabel
-                      control={<Checkbox />}
-                      label="1501-4000"
-                      className="checkbox-text"
-                    />
-                    <FormControlLabel
-                      control={<Checkbox />}
-                      label="> 4000"
-                      className="checkbox-text"
-                    />
-                  </FormGroup>
-                </div>
-              </Card>
-            </Col>
-            <Col sm={8}>
+
+                <FormGroup>
+                  <FormControlLabel
+                    control={<Checkbox />}
+                    label="499-1000"
+                    className="checkbox-text"
+                  />
+                  <FormControlLabel
+                    control={<Checkbox />}
+                    label="1000-1500"
+                    className="checkbox-text"
+                  />
+                  <FormControlLabel
+                    control={<Checkbox />}
+                    label="1501-4000"
+                    className="checkbox-text"
+                  />
+                  <FormControlLabel
+                    control={<Checkbox />}
+                    label="> 4000"
+                    className="checkbox-text"
+                  />
+                </FormGroup>
+              </div>
+            </Card>
+          </Col>
+          <Col sm={8}>
+            <div className="top-card-div">
               <Grid
                 container
                 spacing={3}
@@ -88,24 +88,27 @@ function Middlecontent() {
                 padding="4px"
               >
                 {CourseList.map((course) => (
-                  <Card style={{ width: "15rem" }}>
+                  <Card className="card" style={{ width: "15rem" }}>
                     <Card.Img variant="top" src={course.img} />
                     <Card.Body>
                       <Card.Title>{course.name}</Card.Title>
                       <Card.Text>
-                        <p>Price: {course.price}</p>
-                        <p>Level: {course.level}</p>
+                        <p>Price: Rs. {course.price}</p>
                       </Card.Text>
                     </Card.Body>
                   </Card>
                 ))}
               </Grid>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }
+/*
+
+
+*/
 
 export default Middlecontent;

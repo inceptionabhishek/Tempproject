@@ -14,7 +14,7 @@
   color: black;
   margin-left: 10px;
 }
-.button-Top{
+.button-Top {
   background-color: #afd9e8;
   border-radius: 10px;
   color: rgb(0, 0, 0);
@@ -22,33 +22,60 @@
   height: 31px;
   border: 0px;
 }
-.Top-Heading{
+.Top-Heading {
   margin-top: 50px;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
-.top-card-text{
+.top-card-text {
   text-align: center;
 }
-.text-sub-div{
+.top-card-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-sub-div {
   margin-top: 20px;
   margin-left: 30px;
   font-size: 20px;
   font-family: "Lato", sans-serif;
 }
-.select-cateogry{
+.select-cateogry {
   margin-left: 30px;
 }
-.checkbox-text{
+.checkbox-text {
   font-size: 15px;
   color: grey;
   font-weight: bold;
   font-family: "Lato", sans-serif;
 }
-.Top-Div-container{
+.Top-Div-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+}
+
+.card {
+  border: 0px;
+  width: 20rem;
+  height: 20rem;
+}
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #251d3a;
+  height: 300px;
+  color: white;
+  padding: 3px;
+}
+.text90 {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  padding-left: 10px;
 }
 
 @media only screen and (max-width: 600px) {
